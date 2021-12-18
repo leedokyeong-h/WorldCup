@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ChoiceDAO">
+	<select id="getChoice" resultType="com.mycom.myapp.choice.ChoiceVO">
+		SELECT
+		Category,Item1,Item2,Item3,Item4,Item5,Item6,Item7,Item8,Item9,Item10,Item11,Item12,Item13,Item14,Item15,Item16
+		FROM Itemlist WHERE Category="강아지"
+	</select>
+	<select id="getChoice2" resultType="com.mycom.myapp.choice.ChoiceVO">
+		SELECT
+		Category,Item1,Item2,Item3,Item4,Item5,Item6,Item7,Item8,Item9,Item10,Item11,Item12,Item13,Item14,Item15,Item16
+		FROM Itemlist WHERE Category="음식"
+	</select>
+</mapper>
